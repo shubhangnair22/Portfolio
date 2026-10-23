@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Arcade — Turn progress into play</title>
+  <link rel="stylesheet" href="task-arcade.css" />
+  <link rel="stylesheet" href="task-arcade-fixes.css" />
+  <link rel="stylesheet" href="nav-buttons.css" />
+  <link rel="stylesheet" href="task-arcade-overrides.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><a class="brand" href="../../index.html"><span class="brand-mark">TA</span><span>Task <b>Arcade</b></span></a><div class="top-status"><span class="status-dot"></span> READY <span class="divider"></span> HIGH SCORE <strong id="high-score">000</strong><span class="divider"></span> POINTS <strong id="points">000</strong></div><div class="top-actions"><a class="shelf-link" href="shelf.html">THE SHELF ↗</a><button class="sound-button" id="sound-toggle" type="button" aria-pressed="false">♫ <span>SOUND ON</span></button></div></header>
+    <section class="hero"><div class="hero-copy"><p class="eyebrow"><span>✦</span> SMALL STEPS, REAL MOMENTUM</p><h1>Make progress <em>playable.</em></h1><p class="intro">Spin for a random task, finish it, and earn points based on difficulty.</p><div class="quick-stats"><div><strong id="streak">00</strong><span>DAY STREAK</span></div><div><strong id="spins">00</strong><span>SPINS TODAY</span></div><div><strong id="done-count">00</strong><span>TASKS DONE</span></div></div></div></section>
+    <section class="main-grid"><div class="game-panel"><div class="panel-top"><span><i class="live-dot"></i> YOUR NEXT TASK</span><span class="level">LEVEL 01 <b>●○○○○</b></span></div><div class="wheel-stage"><div class="pointer"></div><div class="wheel-wrap"><canvas id="wheel" width="560" height="560" aria-label="Wheel of unfinished tasks"></canvas><button class="wheel-center" id="wheel-play" type="button" aria-label="Spin for a random task"><span class="center-burst">✦</span><strong>SPIN</strong><small>FOR A TASK</small></button></div></div><button class="spin-button" id="spin-button" type="button"><span class="spin-icon">↻</span> SPIN FOR A TASK <kbd>SPACE</kbd></button><p class="hint">Spin to get a random unfinished task. Complete it to collect its difficulty points!</p></div><div class="side-stack"><div class="mission-card" aria-live="polite"><div class="card-label">CURRENT TASK <span id="mission-type">WAITING</span></div><div class="mission-row"><div class="mission-icon" id="mission-icon">✎</div><div><h2 id="mission-title">Your next win is ready.</h2><p id="mission-copy">Spin the wheel to be randomly assigned an unfinished task.</p></div></div><button class="complete-button" id="complete-button" type="button" disabled>MARK TASK DONE <span>→</span></button></div><div class="task-list-card"><div class="card-label"><span>YOUR QUEST DECK</span><button id="add-task-button" type="button">+ ADD TASK</button></div><form class="task-form" id="task-form" hidden><label>Task name <input id="task-name" name="name" maxlength="60" required placeholder="e.g. Read for 15 minutes" /></label><label>Difficulty <select id="task-level" name="level"><option value="easy">Easy · 50 points</option><option value="medium">Medium · 100 points</option><option value="hard">Hard · 150 points</option></select></label><div class="form-actions"><button type="submit" class="save-task">SAVE TASK</button><button type="button" id="cancel-task">CANCEL</button></div></form><div class="task-list" id="task-list"></div><p class="empty-tasks" id="empty-tasks" hidden>Add a task to put it on the wheel.</p><div class="legend"><span><i class="legend-dot easy"></i> EASY</span><span><i class="legend-dot medium"></i> MEDIUM</span><span><i class="legend-dot hard"></i> HARD</span></div></div></div></section>
+    <div class="celebration" id="celebration" aria-hidden="true"><div class="celebration-box"><span class="confetti">✦ ✦ ✦</span><p>TASK COMPLETE</p><h2 id="result-title">NICE WORK</h2><div class="result-chip" id="result-level">+50 POINTS</div><button id="close-celebration" type="button">KEEP GOING <span>→</span></button></div></div>
+    <p id="save-status" role="status" hidden></p>
+    <footer><span>MADE FOR SMALL WINS <i>♥</i></span><span>v3.0 // TASK ARCADE</span></footer>
+  </main><script src="task-arcade-v2.js"></script>
+</body>
+</html>
