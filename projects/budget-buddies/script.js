@@ -34,7 +34,6 @@ $('customAddButton').addEventListener('click', () => { const amount = Number($('
 $('savedInput').addEventListener('change', e => { const next = Number(e.target.value) || 0; const delta = next - state.saved; state.saved = next; state.activities.unshift({ amount: delta, note: $('reasonInput').value.trim() || 'Updated balance', date: today() }); state.activities = state.activities.slice(0, 20); recordActivity(); $('reasonInput').value = ''; update(); });
 $('saveGoal').addEventListener('click', () => { const name = $('goalInput').value.trim(); const petName = $('petNameInput').value.trim(); const goal = Number($('goalAmountInput').value); if (name) state.goalName = name; if (petName) state.petName = petName; if (goal > 0) state.goal = goal; state.deadline = $('deadlineInput').value; state.celebrationShown = false; update(); });
 $('deleteBuddy').addEventListener('click', () => deletePet(state.activePetId));
-$('deleteFromLobby').addEventListener('click', () => deletePet(state.activePetId));
 $('closeHunger').addEventListener('click', () => { $('hungerModal').hidden = true; }); $('feedButton').addEventListener('click', () => { $('hungerModal').hidden = true; $('reasonInput').focus(); }); $('closeCelebration').addEventListener('click', () => { $('celebration').hidden = true; });
 $('closeCondition').addEventListener('click', () => { $('conditionModal').hidden = true; }); $('visitPet').addEventListener('click', () => { $('conditionModal').hidden = true; });
 $('backToLobby').addEventListener('click', showLobby);
