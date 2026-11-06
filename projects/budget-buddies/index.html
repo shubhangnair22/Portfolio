@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Buddies — Save. Grow. Repeat.</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Budget Buddies home">
+        <span class="brand-mark">🐾</span>
+        <span>budget<br><strong>buddies</strong></span>
+      </a>
+      <div class="streak"><span class="sun">☀</span> <b id="streakCount">0</b> day saving streak!</div>
+      <button class="icon-button" id="resetButton" title="Reset progress" aria-label="Reset progress">↺</button>
+    </header>
+
+    <main id="top">
+      <section class="lobby-section" id="lobbyScreen"><div class="section-heading"><div><span class="eyebrow">Pick a buddy</span><h2>Your pet room</h2></div><span class="heart-badge">🐣</span></div><div class="pet-lobby" id="petLobby"></div></section>
+      <div id="buddyScreen" hidden>
+      <button class="back-button" id="backToLobby">← Back to pet room</button>
+      <section class="hero">
+        <div class="hero-copy">
+          <span class="eyebrow">A tiny goal can grow big things</span>
+          <h1>Save a little.<br /><span>Grow a lot.</span></h1>
+          <p>Your money-saving buddy grows alongside your savings. No spreadsheets. Just small steps, happy dances, and a pet who believes in you.</p>
+          <a class="primary-button" href="#progress">Check on my buddy <span>→</span></a>
+        </div>
+        <div class="hero-doodle" aria-hidden="true">
+          <span class="scribble scribble-1">✦</span><span class="scribble scribble-2">♡</span>
+          <div class="cloud cloud-a"></div><div class="cloud cloud-b"></div>
+          <div class="rainbow"><i></i><i></i><i></i><i></i></div>
+          <img class="hero-pet" src="assets/pet-happy.svg" alt="A happy hand-drawn pet" />
+          <span class="speech">You got this!</span>
+        </div>
+      </section>
+
+      <section class="dashboard" id="progress">
+        <div class="section-heading"><div><span class="eyebrow">Today with your buddy</span><h2>Look how far we’ve come!</h2></div><span class="heart-badge">♥</span></div>
+        <div class="dashboard-grid">
+          <article class="card pet-card">
+            <div class="card-label">Your buddy</div>
+            <div class="pet-scene"><span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><img class="pet-emoji" id="petEmoji" src="assets/pet-happy.svg" alt="Your hand-drawn pet" /><div class="ground"></div></div>
+            <h3 id="petName">Pip</h3><p id="petCaption">Your tiny buddy is just getting started!</p>
+            <div class="level-row"><span id="levelText">Level 1</span><span id="nextLevelText">Next: 25%</span></div><div class="mini-progress"><i id="levelProgress"></i></div>
+          </article>
+
+          <article class="card savings-card">
+            <div class="card-label">My savings goal</div>
+            <div class="amount-row"><span class="currency">$</span><input id="savedInput" type="number" step="1" value="125" aria-label="Amount saved" /><span class="goal-total">/ $<span id="goalTotal">500</span></span></div>
+            <div class="big-progress"><i id="mainProgress"></i><span id="progressLabel">25%</span></div>
+            <div class="savings-meta"><span>Saved so far</span><strong id="savedLabel">$125</strong><span>Goal</span><strong>$<span id="goalLabel">500</span></strong></div>
+            <div class="saving-note"><span>💡</span> Every little bit helps your buddy grow!</div>
+            <div class="deadline-readout"><span>⏰</span> <span id="deadlineText">No deadline set</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="actions-section">
+        <div class="section-heading"><div><span class="eyebrow">Tiny steps, big magic</span><h2>Add to your nest egg</h2></div><span class="doodle-arrow">↘</span></div>
+        <div class="actions-grid">
+          <div class="quick-add card"><div class="action-hint">Money in <span>helps Pip feel full</span></div><label class="reason-input"><span>✎</span><input id="reasonInput" maxlength="60" placeholder="What did you do? e.g. did the dishes" /></label><button data-add="5">+$5</button><button data-add="10">+$10</button><button data-add="25">+$25</button><button data-add="50">+$50</button><div class="action-hint spend-hint">Money out <span>makes Pip hungry</span></div><button class="spend-button" data-add="-5">−$5</button><button class="spend-button" data-add="-10">−$10</button><button class="spend-button" data-add="-25">−$25</button><button class="spend-button" data-add="-50">−$50</button><label class="custom-add"><span>$</span><input id="customAmount" type="number" step="1" placeholder="Other amount (+ or −)" /><button id="customAddButton">Apply</button></label></div>
+          <div class="goal-editor card"><label for="petNameInput">My buddy’s name is...</label><div class="goal-line"><span>🐾</span><input id="petNameInput" value="Pip" maxlength="18" /></div><label for="goalInput">I’m saving for...</label><div class="goal-line"><span>✎</span><input id="goalInput" value="A new bike" maxlength="28" /></div><label for="goalAmountInput">My goal is</label><div class="goal-line"><span>$</span><input id="goalAmountInput" type="number" min="1" step="1" value="500" /></div><label for="deadlineInput">I want it by</label><div class="goal-line"><span>⏰</span><input id="deadlineInput" type="date" /></div><button id="saveGoal" class="small-button">Save goal</button></div>
+        </div>
+        <div class="activity-card card"><div class="card-label">Savings history</div><p id="emptyActivity">Your first money story will appear here.</p><ul id="activityList"></ul><button class="history-toggle" id="historyToggle" hidden>Show more</button></div>
+        <div class="grounding-note"><span>🎨</span><span>Draw your dreams, save your beans!</span><span class="line-doodle">〰〰〰</span></div>
+      </section>
+      </div>
+    </main>
+    <footer><span>Made with <b>♥</b> for future you</span><span>budget buddies © 2026</span></footer>
+  </div>
+  <div class="modal-backdrop" id="hungerModal" hidden><div class="modal-card"><button class="modal-close" id="closeHunger" aria-label="Close">×</button><img class="modal-pet" src="assets/pet-hungry.svg" alt="Hungry hand-drawn pet" /><h2><span id="modalPetName">Pip</span> is hungry!</h2><p>Earn money to feed them and keep your buddy happy.</p><button class="primary-button" id="feedButton">I’ll feed them <span>→</span></button></div></div>
+  <div class="celebration" id="celebration" hidden><div class="celebration-card"><div>🎉 🐾 🎉</div><h2>Goal reached!</h2><p><span id="celebrationPet">Pip</span> grew all the way up with you!</p><button class="small-button" id="closeCelebration">Keep going</button></div></div>
+  <div class="condition-modal" id="conditionModal" hidden><div class="condition-card"><button class="modal-close" id="closeCondition" aria-label="Close">×</button><img class="condition-pet" id="conditionPet" src="assets/pet-hungry.svg" alt="Pet condition illustration" /><h2 id="conditionTitle">Pip is starving</h2><p id="conditionMessage">Save some money to take care of your buddy.</p><button class="primary-button" id="visitPet">Visit buddy <span>→</span></button></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
