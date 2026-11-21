@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 170"><path d="M34 75C18 39 35 19 57 45c16-16 50-16 66 0 23-27 40-6 23 30 7 43-17 72-56 72S27 118 34 75Z" fill="#ffd663" stroke="#292642" stroke-width="6"/><circle cx="66" cy="86" r="5" fill="#292642"/><circle cx="113" cy="86" r="5" fill="#292642"/><path d="M76 108c9 12 19 12 28 0" fill="none" stroke="#ff806f" stroke-width="5" stroke-linecap="round"/><path d="M48 112c-8-6-8-16 0-21 8 5 8 15 0 21Zm84 0c8-6 8-16 0-21-8 5-8 15 0 21Z" fill="#d9d4ff" stroke="#292642" stroke-width="4"/><path d="M75 35h30" stroke="#292642" stroke-width="4" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Level 5: a companion with a simple crown">
+  <title>Level 5: a companion with a simple crown</title>
+  <g stroke="#292642" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="120" cy="218" rx="67" ry="9" fill="#292642" opacity=".09" stroke="none" />
+    <path d="M155 197C178 216 218 207 222 176c3-22-5-43-19-44-12-1-18 10-12 18 7 8 12 12 9 23-4 16-21 16-38 9Z" fill="#ffd663" />
+        <path d="M86 151q-17 22-13 49c1 15 22 17 47 13 25 4 46 2 47-13q4-27-13-49" fill="#ffd663" />
+        <ellipse cx="120" cy="184" rx="23" ry="26" fill="#fff1ce" stroke="none" />
+        <path d="M94 190v17m52-17v17M83 212h25m24 0h25" fill="none" stroke-width="3" /><path d="M65 118 64 72q2-9 10-3l29 24q17-5 34 0l29-24q8-6 10 3l-1 46c12 16 9 34-8 46-23 17-71 17-94 0-17-12-20-30-8-46Z" fill="#ffd663" />
+    <path d="m74 82 2 27 17-8Zm92 0-2 27-17-8Z" fill="#ffb4a2" stroke="none" />
+    <g transform="translate(0 16)"><g fill="#292642" stroke="none"><ellipse cx="97" cy="104" rx="5" ry="7" /><ellipse cx="143" cy="104" rx="5" ry="7" /><circle cx="95.5" cy="102" r="1.7" fill="#fff" /><circle cx="141.5" cy="102" r="1.7" fill="#fff" /></g>
+    <ellipse cx="82" cy="119" rx="10" ry="6" fill="#ffb4a2" stroke="none" /><ellipse cx="158" cy="119" rx="10" ry="6" fill="#ffb4a2" stroke="none" />
+    <path d="M116 115q4-4 8 0l-4 4Z" fill="#292642" stroke-width="2" />
+    <path d="M108 124q6 8 12 0q6 8 12 0" fill="none" stroke-width="3" /><path d="m68 128-17-4m17 14-17 4m121-14 17-4m-17 14 17 4" fill="none" stroke-width="3" /></g><path d="M97 89 92 65 108 74 120 56 132 74 148 65 143 89Z" fill="#ffd663" stroke-width="3.5" /><path d="M99 85h42" fill="none" stroke="#ee9472" stroke-width="3" /></g>
+</svg>

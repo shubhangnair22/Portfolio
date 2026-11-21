@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 140"><path d="M60 8C28 10 12 54 16 88c4 31 22 44 44 44s40-13 44-44C108 54 92 10 60 8Z" fill="#fff1c7" stroke="#292642" stroke-width="6"/><path d="M34 73c10-14 22-18 34-18 13 0 23 5 31 16" fill="none" stroke="#ffd663" stroke-width="9" stroke-linecap="round"/><circle cx="45" cy="82" r="4" fill="#292642"/><circle cx="75" cy="82" r="4" fill="#292642"/><path d="M50 99c7 7 14 7 21 0" fill="none" stroke="#ff806f" stroke-width="4" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Level 1: a speckled egg ready to hatch">
+  <title>Level 1: a speckled egg ready to hatch</title>
+  <g stroke="#292642" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="120" cy="218" rx="67" ry="9" fill="#292642" opacity=".09" stroke="none" />
+    <path d="M120 38C91 38 61 94 61 145c0 43 24 69 59 69s59-26 59-69c0-51-30-107-59-107Z" fill="#fff1ce" />
+    <path d="M81 98q9-25 22-36" stroke="#fffaf0" stroke-width="9" fill="none" />
+    <g fill="#ffd663" stroke="none"><ellipse cx="143" cy="85" rx="14" ry="19" transform="rotate(-24 143 85)" /><ellipse cx="77" cy="153" rx="12" ry="18" /><ellipse cx="148" cy="187" rx="17" ry="12" /></g><g fill="#292642" stroke="none"><ellipse cx="97" cy="131" rx="5" ry="7" /><ellipse cx="143" cy="131" rx="5" ry="7" /><circle cx="95.5" cy="129" r="1.7" fill="#fff" /><circle cx="141.5" cy="129" r="1.7" fill="#fff" /></g>
+    <ellipse cx="82" cy="146" rx="10" ry="6" fill="#ffb4a2" stroke="none" /><ellipse cx="158" cy="146" rx="10" ry="6" fill="#ffb4a2" stroke="none" />
+    <path d="M116 142q4-4 8 0l-4 4Z" fill="#292642" stroke-width="2" />
+    <path d="M108 151q6 8 12 0q6 8 12 0" fill="none" stroke-width="3" /></g>
+</svg>
